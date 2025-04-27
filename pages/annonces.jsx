@@ -178,7 +178,7 @@ export default function AnnoncesPage() {
                 </button>
               </Link>
               <Link href="/demander">
-                <button className="flex items-center gap-1 px-3 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-100">
+                <button className="flex items-center gap-1 px-3 py-2 text-sm border border-gray-300 rounded-md hover:bg-gray-100 text-foreground">
                   <HandHeart className="h-4 w-4" />
                   Demander
                 </button>
@@ -206,7 +206,7 @@ export default function AnnoncesPage() {
                   <select
                     value={typeFilter}
                     onChange={(e) => setTypeFilter(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-background"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-background text-foreground"
                   >
                     <option value="tous">Tous les types</option>
                     <option value="offre">Offres</option>
@@ -218,7 +218,7 @@ export default function AnnoncesPage() {
                   <select
                     value={categorieFilter}
                     onChange={(e) => setCategorieFilter(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-background"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-background text-foreground"
                   >
                     <option value="tous">Toutes</option>
                     <option value="vetements">Vêtements</option>

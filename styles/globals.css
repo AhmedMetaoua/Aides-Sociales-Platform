@@ -60,6 +60,24 @@ body {
   font-family: var(--font-sans), Arial, sans-serif;
 }
 
+/* Form element styles */
+select, input, textarea {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--border));
+}
+
+select option {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+select:focus, input:focus, textarea:focus {
+  border-color: hsl(var(--ring));
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+}
+
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;

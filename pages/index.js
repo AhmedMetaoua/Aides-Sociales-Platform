@@ -28,7 +28,7 @@ export default function Home() {
               </button>
             </Link>
             <Link href="/demander">
-              <button className="flex items-center gap-2 px-8 py-3 text-gray-800 bg-white border-2 border-blue-500 rounded-md hover:bg-blue-50 transition-colors shadow-sm">
+              <button className="flex items-center gap-2 px-8 py-3 text-gray-800 bg-white border-2 border-blue-500 rounded-md hover:bg-blue-50 hover:text-gray-900 transition-colors shadow-sm">
                 <HandHeart className="h-5 w-5" />
                 J'ai besoin d'aide
               </button>
