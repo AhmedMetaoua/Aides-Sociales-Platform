@@ -1,40 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Aide Platform - Plateforme d'Entraide Locale
+
+Aide Platform is a Next.js-based web application that facilitates local community assistance by connecting people who need help with those who can provide it. The platform allows users to post both offers and requests for various types of assistance.
+
+## Features
+
+- **Dual Posting System**: Users can post both offers ("offres") and requests ("demandes") for assistance
+- **Categorized Assistance**: Posts are organized into categories:
+  - Vêtements (Clothing)
+  - Nourriture (Food)
+  - Services
+  - Logement (Housing)
+  - Transport
+  - Autre (Other)
+- **Regional Organization**: Posts are organized by region for better local matching
+- **Contact Information**: Direct contact details for connecting helpers with those in need
+- **Modern UI**: Built with Next.js and Tailwind CSS for a responsive and user-friendly interface
+
+## Tech Stack
+
+- **Frontend**:
+  - Next.js 15.2.4
+  - React 19.0.0
+  - Tailwind CSS 4.1.4
+  - Lucide React for icons
+
+- **Backend**:
+  - Next.js API Routes
+  - MongoDB with Mongoose 8.14.0
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (Latest LTS version recommended)
+- MongoDB instance (local or cloud)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd aide-platform
+   ```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory with:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- `/pages` - Next.js pages and API routes
+  - `/api` - Backend API endpoints
+  - `annonces.jsx` - Main listings page
+  - `proposer.jsx` - Form for posting offers
+  - `demander.jsx` - Form for posting requests
+- `/models` - MongoDB schemas
+- `/public` - Static assets
+- `/styles` - Global styles and Tailwind configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Scripts
 
-## Deploy on Vercel
+- `npm run dev` - Start development server
+- `npm run build` - Build production bundle
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with Next.js and React
+- Styled with Tailwind CSS
+- Icons from Lucide React
+# Aides-Sociales-Platform
