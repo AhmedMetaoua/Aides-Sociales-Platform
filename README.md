@@ -1,4 +1,63 @@
-# Aide Platform - Plateforme d'Entraide Locale
+# Application web solidaire pour les aides sociales – Entraide locale
+
+Une plateforme web permettant aux utilisateurs de proposer et de demander de l'aide au sein de leur communauté locale.
+
+## Démonstration
+
+Vous pouvez voir une démonstration de l'application en action dans cette vidéo :
+[Vidéo de démonstration](https://youtu.be/Zd_-tg7JbMw)
+
+## Fonctionnalités
+
+- **Création d'annonces** : Les utilisateurs peuvent créer des annonces pour proposer ou demander de l'aide
+- **Filtrage et recherche** : Recherche d'annonces par type, catégorie et mots-clés
+- **Interface responsive** : Expérience utilisateur optimisée sur mobile et desktop
+- **Gestion des annonces** : Possibilité de supprimer ses propres annonces
+
+## Technologies utilisées
+
+- **Frontend** : Next.js, React, Tailwind CSS
+- **Backend** : API Routes de Next.js
+- **Base de données** : MongoDB
+- **Déploiement** : Vercel
+
+## Installation
+
+1. Clonez le dépôt :
+```bash
+git clone https://github.com/votre-username/aide-platform.git
+cd aide-platform
+```
+
+2. Installez les dépendances :
+```bash
+npm install
+```
+
+3. Créez un fichier `.env.local` à la racine du projet avec les variables suivantes :
+```
+MONGODB_URI=votre_uri_mongodb
+```
+
+4. Lancez le serveur de développement :
+```bash
+npm run dev
+```
+
+5. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+
+## Structure du projet
+
+- `/pages` : Pages de l'application et API routes
+- `/components` : Composants React réutilisables
+- `/lib` : Utilitaires et configurations
+- `/public` : Fichiers statiques (images, etc.)
+
+## Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+
+## Licence
 
 Aide Platform is a Next.js-based web application that facilitates local community assistance by connecting people who need help with those who can provide it. The platform allows users to post both offers and requests for various types of assistance.
 
